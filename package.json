@@ -1,0 +1,32 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TandyN/my-website.git"
+  },
+  "author": "Tandy Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TandyN/my-website/issues"
+  },
+  "homepage": "https://github.com/TandyN/my-website#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
