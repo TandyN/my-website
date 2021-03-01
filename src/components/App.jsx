@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import MenuBar from './MenuBar';
 import SectionHome from './SectionHome';
 import SectionSkills from './SectionSkills';
+import SectionExperience from './SectionExperience';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <MenuBar />
       <SectionHome />
       <SectionSkills />
+      <SectionExperience />
     </Container>
   )
 }
