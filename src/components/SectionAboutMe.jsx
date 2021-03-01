@@ -2,18 +2,31 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+import ImageSelf from '../../images/me.png';
+
+const gridContainer = makeStyles({
   root: {
-    paddingTop: '60px',
+    paddingTop: '100px',
+  },
+});
+
+const gridPicture = makeStyles({
+  root: {
+    backgroundImage: `url(${ImageSelf})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    height: '500px',
+    width: '500px',
   },
 });
 
 const SectionAboutMe = () => {
-  const classes = useStyles();
+  const gridContainerClass = gridContainer();
+  const gridPictureClass = gridPicture();
 
   return (
-    <Grid container spacing={10} justify='center' className={classes.root}>
-      <Grid item>Picture</Grid>
+    <Grid container spacing={10} justify='center' className={gridContainerClass.root}>
+      <Grid item className={gridPictureClass.root} />
       <Grid item>About Me</Grid>
     </Grid>
   )
