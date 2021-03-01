@@ -1,8 +1,12 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
+import MenuBar from './MenuBar'
 
 const App = () => {
   return (
-    <div>App</div>
+    <Container maxWidth="md">
+      <MenuBar />
+    </Container>
   )
 }
 
