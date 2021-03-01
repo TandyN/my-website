@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 
 const developmentList = [
   'Git',
@@ -9,11 +10,20 @@ const developmentList = [
   'AWS S3/EC2',
   'Heroku',
   'NGINX',
-],
+];
 
 const DevelopmentItems = () => {
   return (
-    <div>Test</div>
+    <Grid 
+      container
+      spacing={4}
+    >
+      {developmentList.map((value) => {
+        return (
+          <Grid item>{value}</Grid>
+        )
+      })}
+    </Grid>
   )
 }
 

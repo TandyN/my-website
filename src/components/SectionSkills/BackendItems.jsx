@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 
 const backendList = [
   'Node.js',
@@ -12,7 +13,16 @@ const backendList = [
 
 const BackendItems = () => {
   return (
-    <div>Test</div>
+    <Grid 
+      container
+      spacing={4}
+    >
+      {backendList.map((value) => {
+        return (
+          <Grid item>{value}</Grid>
+        )
+      })}
+    </Grid>
   )
 }
 

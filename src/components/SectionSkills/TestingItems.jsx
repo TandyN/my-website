@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 
 const testingList = [
   'Jest',
@@ -10,7 +11,16 @@ const testingList = [
 
 const TestingItems = () => {
   return (
-    <div>Test</div>
+    <Grid 
+      container
+      spacing={4}
+    >
+      {testingList.map((value) => {
+        return (
+          <Grid item>{value}</Grid>
+        )
+      })}
+    </Grid>
   )
 }
 
