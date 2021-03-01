@@ -6,7 +6,7 @@ import ImageSelf from '../../images/me.png';
 
 const gridContainer = makeStyles({
   root: {
-    paddingTop: '100px',
+    padding: '100px 0',
   },
 });
 
