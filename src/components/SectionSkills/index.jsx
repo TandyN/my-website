@@ -19,7 +19,7 @@ const SectionSkills = () => {
       alignItems='center'
       direction='column'
     >
-      <h2>SKILLS</h2>
+      <h2>Skills</h2>
       <Grid item className={gridCategoryClass.root} >
         <Button>Frontend</Button>
       </Grid>
