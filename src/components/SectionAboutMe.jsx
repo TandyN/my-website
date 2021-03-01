@@ -25,9 +25,15 @@ const SectionAboutMe = () => {
   const gridPictureClass = gridPicture();
 
   return (
-    <Grid container spacing={10} justify='center' className={gridContainerClass.root}>
+    <Grid
+      container
+      spacing={10}
+      justify='center'
+      className={gridContainerClass.root}
+      >
+      <h2>ABOUT ME</h2>
       <Grid item className={gridPictureClass.root} />
-      <Grid item>About Me</Grid>
+      <Grid item>About Me Paragraph</Grid>
     </Grid>
   )
 }
