@@ -16,10 +16,10 @@ const SectionSkills = () => {
     <Grid 
       container
       spacing={0}
-      alignItems="center"
-      justify="center"
-      direction="column"
-      >
+      alignItems='center'
+      justify='center'
+      direction='column'
+    >
       <h2>SKILLS</h2>
       <Grid item className={gridCategoryClass.root} >
         <Button>Frontend</Button>

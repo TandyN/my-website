@@ -15,14 +15,23 @@ const gridPicture = makeStyles({
     backgroundImage: `url(${ImageSelf})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'contain',
-    height: '500px',
-    width: '500px',
+    height: '400px',
+    marginTop: '50px',
+    width: '400px',
   },
 });
 
-const SectionAboutMe = () => {
+const gridAboutMe = makeStyles({
+  root: {
+    paddingLeft: '100px',
+    width: '40%',
+  },
+});
+
+const SectionHome = () => {
   const gridContainerClass = gridContainer();
   const gridPictureClass = gridPicture();
+  const gridAboutMeClass = gridAboutMe();
 
   return (
     <Grid
@@ -30,12 +39,18 @@ const SectionAboutMe = () => {
       spacing={10}
       justify='center'
       className={gridContainerClass.root}
-      >
-      <h2>ABOUT ME</h2>
+    >
       <Grid item className={gridPictureClass.root} />
-      <Grid item>About Me Paragraph</Grid>
+      <Grid
+        container
+        direction='column'
+        justify='center'
+        className={gridAboutMeClass.root}
+      >
+        <Grid item>About Me</Grid>        
+      </Grid>
     </Grid>
   )
 }
 
-export default SectionAboutMe;
+export default SectionHome;
