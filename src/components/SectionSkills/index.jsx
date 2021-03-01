@@ -17,7 +17,6 @@ const SectionSkills = () => {
       container
       spacing={0}
       alignItems='center'
-      justify='center'
       direction='column'
     >
       <h2>SKILLS</h2>
