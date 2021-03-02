@@ -17,9 +17,9 @@ const FrontendItems = () => {
       container
       spacing={4}
     >
-      {frontendList.map((value) => {
+      {frontendList.map((value, index) => {
         return (
-          <Grid item>{value}</Grid>
+          <Grid item key={index}>{value}</Grid>
         )
       })}
     </Grid>

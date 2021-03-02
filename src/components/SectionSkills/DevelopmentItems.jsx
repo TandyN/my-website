@@ -18,9 +18,9 @@ const DevelopmentItems = () => {
       container
       spacing={4}
     >
-      {developmentList.map((value) => {
+      {developmentList.map((value, index) => {
         return (
-          <Grid item>{value}</Grid>
+          <Grid item key={index}>{value}</Grid>
         )
       })}
     </Grid>
