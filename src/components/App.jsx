@@ -8,7 +8,7 @@ import SectionPortfilio from './SectionPortfolio';
 
 const App = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <MenuBar />
       <SectionHome />
       <SectionSkills />
