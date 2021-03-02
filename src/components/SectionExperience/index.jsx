@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import ExperienceItem from './ExperienceItem';
 
 import experienceData from './experience.json'; 
 
@@ -11,6 +12,11 @@ const SectionExperience = () => {
       direction='column'
     >
       <h2>Experience</h2>
+      {experienceData.map((experienceItem) => {
+        return (
+          <ExperienceItem experienceItem={experienceItem} />
+        )
+      })}
     </Grid>
   )
 }
