@@ -2,6 +2,10 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import FrontendItems from './FrontendItems';
+import BackendItems from './BackendItems';
+import TestingItems from './TestingItems';
+import DevelopmentItems from './DevelopmentItems';
 
 const gridCategory = makeStyles({
   root: {
@@ -22,15 +26,19 @@ const SectionSkills = () => {
       <h2>Skills</h2>
       <Grid item className={gridCategoryClass.root} >
         <Button>Frontend</Button>
+        <FrontendItems />
       </Grid>
       <Grid item className={gridCategoryClass.root}>
         <Button>Backend</Button>
-      </Grid>
-      <Grid item className={gridCategoryClass.root}>
-        <Button>Databases</Button>
+        <BackendItems />
       </Grid>
       <Grid item className={gridCategoryClass.root}>
         <Button>Testing</Button>
+        <TestingItems />
+      </Grid>
+      <Grid item className={gridCategoryClass.root}>
+        <Button>Development</Button>
+        <DevelopmentItems />
       </Grid>
     </Grid>
   )
