@@ -17,9 +17,9 @@ const BackendItems = () => {
       container
       spacing={4}
     >
-      {backendList.map((value) => {
+      {backendList.map((value, index) => {
         return (
-          <Grid item>{value}</Grid>
+          <Grid item key={index}>{value}</Grid>
         )
       })}
     </Grid>

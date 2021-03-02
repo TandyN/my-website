@@ -15,9 +15,9 @@ const TestingItems = () => {
       container
       spacing={4}
     >
-      {testingList.map((value) => {
+      {testingList.map((value, index) => {
         return (
-          <Grid item>{value}</Grid>
+          <Grid item key={index}>{value}</Grid>
         )
       })}
     </Grid>

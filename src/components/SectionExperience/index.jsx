@@ -12,9 +12,9 @@ const SectionExperience = () => {
       direction='column'
     >
       <h2>Experience</h2>
-      {experienceData.map((experienceItem) => {
+      {experienceData.map((experienceItem, index) => {
         return (
-          <ExperienceItem experienceItem={experienceItem} />
+          <ExperienceItem experienceItem={experienceItem} key={index}/>
         )
       })}
     </Grid>
