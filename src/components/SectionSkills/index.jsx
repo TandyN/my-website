@@ -17,7 +17,7 @@ const SectionSkills = () => {
   const gridCategoryClass = gridCategory();
 
   return (
-    <Grid 
+    <Grid
       container
       spacing={0}
       alignItems='center'

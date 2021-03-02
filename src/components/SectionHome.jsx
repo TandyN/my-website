@@ -47,7 +47,7 @@ const SectionHome = () => {
         justify='center'
         className={gridAboutMeClass.root}
       >
-        <Grid item>About Me</Grid>        
+        <Grid item>About Me</Grid>
       </Grid>
     </Grid>
   )
