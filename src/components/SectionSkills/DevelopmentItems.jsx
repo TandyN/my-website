@@ -14,7 +14,7 @@ const developmentList = [
 
 const DevelopmentItems = () => {
   return (
-    <Grid 
+    <Grid
       container
       spacing={4}
     >

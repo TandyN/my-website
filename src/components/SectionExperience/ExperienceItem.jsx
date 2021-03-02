@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
 
-const ExperienceItem = ({experienceItem}) => {
+const ExperienceItem = ({ experienceItem }) => {
   return (
-    <Grid 
+    <Grid
       item
     >
       <h3>{`${experienceItem.start_year} - ${experienceItem.end_year}`}</h3>

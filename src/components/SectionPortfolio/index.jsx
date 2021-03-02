@@ -6,14 +6,14 @@ import portfolioData from './portfolio.json';
 
 const SectionPortfilio = () => {
   return (
-    <Grid 
+    <Grid
       container
       alignItems='center'
       direction='column'
     >
       <h2>Portfolio</h2>
-      <Grid 
-      container
+      <Grid
+        container
       >
         {portfolioData.map((portfolioItem, index) => {
           return <PortfolioItem portfolioItem={portfolioItem} key={index} />

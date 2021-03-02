@@ -13,7 +13,7 @@ const frontendList = [
 
 const FrontendItems = () => {
   return (
-    <Grid 
+    <Grid
       container
       spacing={4}
     >
