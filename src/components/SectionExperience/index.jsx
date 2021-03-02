@@ -1,6 +1,8 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
+import experienceData from './experience.json'; 
+
 const SectionExperience = () => {
   return (
     <Grid 
