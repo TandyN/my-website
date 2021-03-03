@@ -43,7 +43,7 @@ const App = () => {
       downHandler={handleScrollDown}
     >
       <Container 
-        maxWidth="xl"
+        maxWidth="lg"
       >
         <MenuBar />
         {currentComponent}
