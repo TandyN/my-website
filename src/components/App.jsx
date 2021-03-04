@@ -54,7 +54,7 @@ const App = () => {
         upHandler={handleScrollUp}
         downHandler={handleScrollDown}
         style={{
-          height: "100%",
+          height: '100%',
         }}
       >
         {currentComponent}

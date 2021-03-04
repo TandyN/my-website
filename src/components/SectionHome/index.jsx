@@ -2,52 +2,68 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import ImageSelf from '../../../images/me.png';
+import ImageSelf from '../../../images/me.jpg';
 
-const gridContainer = makeStyles({
+const horizontalAlign = makeStyles({
   root: {
-    padding: '100px 0',
+    height: '100%',
   },
 });
 
-const gridPicture = makeStyles({
+const gridPictureItem = makeStyles({
   root: {
-    backgroundImage: `url(${ImageSelf})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'contain',
-    height: '400px',
-    marginTop: '50px',
     width: '400px',
   },
 });
 
-const gridAboutMe = makeStyles({
+const imgPicture = makeStyles({
   root: {
-    paddingLeft: '100px',
-    width: '40%',
+    borderRadius: 360,
+    height: '400px',
+    width: '400px',
+  },
+});
+
+const gridAboutMeItem = makeStyles({
+  root: {
+    margin: 0,
+    width: '400px',
   },
 });
 
 const SectionHome = () => {
-  const gridContainerClass = gridContainer();
-  const gridPictureClass = gridPicture();
-  const gridAboutMeClass = gridAboutMe();
+  const horizontalAlignContainer = horizontalAlign();
+
+  const gridAboutMeItemClass = gridAboutMeItem();
+
+  const gridPictureItemClass = gridPictureItem();
+  const imgPictureClass = imgPicture();
 
   return (
     <Grid
       container
-      spacing={10}
-      justify='center'
-      className={gridContainerClass.root}
+      spacing={0}
+      justify="center"
+      alignItems="center"
+      className={horizontalAlignContainer.root}
     >
-      <Grid item className={gridPictureClass.root} />
-      <Grid
-        container
-        direction='column'
-        justify='center'
-        className={gridAboutMeClass.root}
-      >
-        <Grid item>About Me</Grid>
+      <Grid item className={gridPictureItemClass.root} xsm={12} sm={12} md={4}>
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+        >
+          <img src={ImageSelf} className={imgPictureClass.root} />
+        </Grid>
+      </Grid>
+      <Grid item className={gridAboutMeItemClass.root} xsm={12} sm={12} md={5} >
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+        >
+          <Grid item >About Me</Grid>
+        </Grid>
       </Grid>
     </Grid>
   )
