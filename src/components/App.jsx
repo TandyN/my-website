@@ -12,8 +12,9 @@ import SectionPersonal from './SectionPersonal';
 
 const componentBox = makeStyles({
   root: {
+    borderStyle: 'solid',
     height: '97%',
-    paddingTop: '64px',
+    marginTop: '64px',
   }
 });
 
