@@ -6,9 +6,16 @@ import ImageSelf from '../../../images/me.jpg';
 
 const styledImg = makeStyles({
   root: {
+    borderColor: '#333',
     borderRadius: 360,
-    height: '400px',
-    width: '400px',
+    borderStyle: 'solid',
+    borderWidth: '10px',
+    height: '300px',
+    width: '300px',
+    '@media (min-width:1150px)': {
+      height: '400px',
+      width: '400px',
+    },
   }
 });
 

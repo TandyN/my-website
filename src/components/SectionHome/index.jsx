@@ -9,10 +9,8 @@ const styledWrapper = makeStyles((theme) => ({
   root: {
     height: '100%',
     [theme.breakpoints.down('sm')]: {
-      backgroundColor: theme.palette.secondary.main,
     },
     [theme.breakpoints.up('md')]: {
-      backgroundColor: theme.palette.primary.main,
     }
   }
 }));
@@ -30,6 +28,7 @@ const SectionHome = () => {
       <Grid
         container
         justify="center"
+        spacing={5}
       >
         <HomePicture />
         <HomeAboutMeSmall />

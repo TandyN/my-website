@@ -13,7 +13,7 @@ import SectionPersonal from './SectionPersonal';
 const componentBox = makeStyles({
   root: {
     borderStyle: 'solid',
-    height: '97%',
+    height: '100%',
     marginTop: '64px',
   }
 });
@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="xl"
     >
       <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
       <Box

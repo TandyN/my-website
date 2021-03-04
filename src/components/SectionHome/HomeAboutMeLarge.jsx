@@ -2,13 +2,23 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 
-const styledAboutMe = makeStyles({
+
+const styledAboutMe = makeStyles((theme) => ({
   root: {
-    maxWidth: '500px',
+    lineHeight: 2.0,
+    textAlign: 'center',
+    whiteSpace: 'pre-line',
     wordWrap: 'break-word',
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.5rem',
+      '@media (min-width:1150px)': {
+        fontSize: '2rem',
+      },
+    },
   }
-});
+}));
 
 const HomeAboutMeLarge = () => {
   const styledAboutMeClass = styledAboutMe();
@@ -20,9 +30,13 @@ const HomeAboutMeLarge = () => {
         item
         justify="center"
         alignItems="center"
-        md={3}
+        md={4}
       >
-        <p className={styledAboutMeClass.root}>About Me</p>
+        <h3 className={styledAboutMeClass.root}>
+          {`Tandy Nguyen
+          Full-Stack Engineer
+          JavaScript & Node.js`}
+        </h3>
       </Grid>
     </Hidden>
   )
