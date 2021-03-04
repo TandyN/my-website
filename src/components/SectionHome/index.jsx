@@ -5,11 +5,17 @@ import HomeAboutMeSmall from './HomeAboutMeSmall';
 import HomeAboutMeLarge from './HomeAboutMeLarge';
 import HomePicture from './HomePicture';
 
-const styledWrapper = makeStyles({
+const styledWrapper = makeStyles((theme) => ({
   root: {
     height: '100%',
+    [theme.breakpoints.down('sm')]: {
+      backgroundColor: theme.palette.secondary.main,
+    },
+    [theme.breakpoints.up('md')]: {
+      backgroundColor: theme.palette.primary.main,
+    }
   }
-});
+}));
 
 const SectionHome = () => {
   const styledWrapperClass = styledWrapper();
@@ -24,7 +30,6 @@ const SectionHome = () => {
       <Grid
         container
         justify="center"
-        spacing={3}
       >
         <HomePicture />
         <HomeAboutMeSmall />
