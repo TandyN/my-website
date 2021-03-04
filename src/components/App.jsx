@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
 import MenuBar from './MenuBar';
 import SectionHome from './SectionHome';
@@ -9,7 +11,16 @@ import SectionPortfilio from './SectionPortfolio';
 import SectionContact from './SectionContact';
 import SectionPersonal from './SectionPersonal';
 
+const componentBox = makeStyles({
+  root: {
+    height: '97%',
+    paddingTop: '64px',
+  }
+});
+
 const App = () => {
+  const componentBoxClass = componentBox();
+
   const [currentPage, setCurrentPage] = React.useState((0));
   const [currentComponent, setCurrentComponent] = React.useState((<SectionHome />));
 
@@ -50,15 +61,19 @@ const App = () => {
       maxWidth="lg"
     >
       <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
-      <ReactScrollWheelHandler
-        upHandler={handleScrollUp}
-        downHandler={handleScrollDown}
-        style={{
-          height: '100%',
-        }}
+      <Box
+        className={componentBoxClass.root}
       >
-        {currentComponent}
-      </ReactScrollWheelHandler>
+        <ReactScrollWheelHandler
+          upHandler={handleScrollUp}
+          downHandler={handleScrollDown}
+          style={{
+            height: '100%',
+          }}
+        >
+          {currentComponent}
+        </ReactScrollWheelHandler>
+      </Box>
     </Container>
   )
 }
