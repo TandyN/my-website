@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
-import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
 import MenuBar from './MenuBar';
 import SectionHome from './SectionHome';
 import SectionSkills from './SectionSkills';
@@ -38,20 +37,6 @@ const App = () => {
     else if (currentPage === 5) setCurrentComponent(<SectionPersonal />);
   }
 
-  const handleScrollUp = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-      console.log('up');
-    }
-  }
-
-  const handleScrollDown = () => {
-    if (currentPage < 5) {
-      setCurrentPage(currentPage + 1);
-      console.log('down');
-    }
-  }
-
   const hanldeMenuBarClick = (pageNumber) => {
     setCurrentPage(pageNumber);
   }
@@ -64,15 +49,7 @@ const App = () => {
       <Box
         className={componentBoxClass.root}
       >
-        <ReactScrollWheelHandler
-          upHandler={handleScrollUp}
-          downHandler={handleScrollDown}
-          style={{
-            height: '100%',
-          }}
-        >
           {currentComponent}
-        </ReactScrollWheelHandler>
       </Box>
     </Container>
   )
