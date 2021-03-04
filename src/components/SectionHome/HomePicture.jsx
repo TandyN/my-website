@@ -6,6 +6,7 @@ import ImageSelf from '../../../images/me.jpg';
 
 const styledImg = makeStyles({
   root: {
+    borderRadius: 360,
     height: '400px',
     width: '400px',
   }
