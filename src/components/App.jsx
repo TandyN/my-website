@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 import MenuBar from './MenuBar';
 import SectionHome from './SectionHome';
 import SectionSkills from './SectionSkills';
@@ -9,7 +10,25 @@ import SectionPortfilio from './SectionPortfolio';
 import SectionContact from './SectionContact';
 import SectionPersonal from './SectionPersonal';
 
+const appBox = makeStyles({
+  root: {
+    backgroundColor: '#333',
+    height: '100%',
+  }
+});
+
+const componentBox = makeStyles({
+  root: {
+    fontFamily: 'sans-serif',
+    height: '100%',
+    marginTop: '64px',
+  }
+});
+
 const App = () => {
+  const appBoxClass = appBox();
+  const componentBoxClass = componentBox();
+
   const [currentPage, setCurrentPage] = React.useState((0));
   const [currentComponent, setCurrentComponent] = React.useState((<SectionHome />));
 
@@ -27,39 +46,26 @@ const App = () => {
     else if (currentPage === 5) setCurrentComponent(<SectionPersonal />);
   }
 
-  const handleScrollUp = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-      console.log('up');
-    }
-  }
-
-  const handleScrollDown = () => {
-    if (currentPage < 5) {
-      setCurrentPage(currentPage + 1);
-      console.log('down');
-    }
-  }
-
   const hanldeMenuBarClick = (pageNumber) => {
     setCurrentPage(pageNumber);
   }
 
   return (
-    <Container
-      maxWidth="lg"
+    <Box
+      className={appBoxClass.root}
     >
-      <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
-      <ReactScrollWheelHandler
-        upHandler={handleScrollUp}
-        downHandler={handleScrollDown}
-        style={{
-          height: "100%",
-        }}
+      <Container
+        maxWidth="xl"
+        className={appBoxClass.root}
       >
-        {currentComponent}
-      </ReactScrollWheelHandler>
-    </Container>
+        <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
+        <Box
+          className={componentBoxClass.root}
+        >
+            {currentComponent}
+        </Box>
+      </Container>
+    </Box>
   )
 }
 
