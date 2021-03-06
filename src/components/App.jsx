@@ -14,7 +14,6 @@ const appBox = makeStyles({
   root: {
     fontFamily: 'sans-serif',
     height: '100%',
-    marginTop: '64px',
   }
 });
 

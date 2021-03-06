@@ -5,21 +5,21 @@ import HomeAboutMeSmall from './HomeAboutMeSmall';
 import HomeAboutMeLarge from './HomeAboutMeLarge';
 import HomePicture from './HomePicture';
 
-const styledWrapper = makeStyles({
+const styledHomeWrapper = makeStyles({
   root: {
     height: '100%',
   }
 });
 
 const SectionHome = () => {
-  const styledWrapperClass = styledWrapper();
+  const styledHomeWrapperClass = styledHomeWrapper();
 
   return (
     <Grid
       container
       direction="column"
       justify="center"
-      className={styledWrapperClass.root}
+      className={styledHomeWrapperClass.root}
     >
       <Grid
         container
