@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import ImageSelf from '../../../images/me.jpg';
 
-const styledImg = makeStyles({
+const styledImg = makeStyles((theme) => ({
   root: {
     borderColor: '#333',
     borderRadius: 360,
@@ -12,12 +12,12 @@ const styledImg = makeStyles({
     borderWidth: '10px',
     height: '300px',
     width: '300px',
-    '@media (min-width:1150px)': {
-      height: '400px',
-      width: '400px',
+    [theme.breakpoints.down('sm')]: {
+      height: '250px',
+      width: '250px',
     },
   }
-});
+}));
 
 const HomePicture = () => {
   const styledImgClass = styledImg();
