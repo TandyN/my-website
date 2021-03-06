@@ -10,15 +10,23 @@ import SectionPortfilio from './SectionPortfolio';
 import SectionContact from './SectionContact';
 import SectionPersonal from './SectionPersonal';
 
+const appBox = makeStyles({
+  root: {
+    backgroundColor: '#333',
+    height: '100%',
+  }
+});
+
 const componentBox = makeStyles({
   root: {
-    borderStyle: 'solid',
+    fontFamily: 'sans-serif',
     height: '100%',
     marginTop: '64px',
   }
 });
 
 const App = () => {
+  const appBoxClass = appBox();
   const componentBoxClass = componentBox();
 
   const [currentPage, setCurrentPage] = React.useState((0));
@@ -43,16 +51,21 @@ const App = () => {
   }
 
   return (
-    <Container
-      maxWidth="xl"
+    <Box
+      className={appBoxClass.root}
     >
-      <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
-      <Box
-        className={componentBoxClass.root}
+      <Container
+        maxWidth="xl"
+        className={appBoxClass.root}
       >
-          {currentComponent}
-      </Box>
-    </Container>
+        <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
+        <Box
+          className={componentBoxClass.root}
+        >
+            {currentComponent}
+        </Box>
+      </Container>
+    </Box>
   )
 }
 
