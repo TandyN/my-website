@@ -5,24 +5,27 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const testingList = [
-  'Jest',
-  'Enzyme',
-  'SuperTest',
-  'k6',
-  'Loader.io',
+const developmentList = [
+  'Git',
+  'Docker',
+  'GitLab CI/CD',
+  'Webpack',
+  'Babel',
+  'AWS S3/EC2',
+  'Heroku',
+  'NGINX',
 ];
 
-const TestingItems = () => {
+const CategoryDevelopment = () => {
   return (
     <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
       >
-        Testing
+        Development
       </AccordionSummary>
       <AccordionDetails>
-      {testingList.map((value, index) => {
+      {developmentList.map((value, index) => {
         return (
           <Grid item key={index}>{value}</Grid>
         )
@@ -32,4 +35,4 @@ const TestingItems = () => {
   )
 }
 
-export default TestingItems;
+export default CategoryDevelopment;

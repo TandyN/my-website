@@ -5,26 +5,26 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const backendList = [
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'MySQL',
-  'PostgreSQL',
-  'Couchbase',
-  'Redis'
+const frontendList = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'styled-components',
+  'Material-UI'
 ];
 
-const BackendItems = () => {
+const CategoryFrontend = () => {
   return (
     <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
       >
-        Backend
+        Frontend
       </AccordionSummary>
       <AccordionDetails>
-      {backendList.map((value, index) => {
+      {frontendList.map((value, index) => {
         return (
           <Grid item key={index}>{value}</Grid>
         )
@@ -34,4 +34,4 @@ const BackendItems = () => {
   )
 }
 
-export default BackendItems;
+export default CategoryFrontend;

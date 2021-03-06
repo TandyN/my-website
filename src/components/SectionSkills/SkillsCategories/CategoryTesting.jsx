@@ -5,26 +5,24 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const frontendList = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'styled-components',
-  'Material-UI'
+const testingList = [
+  'Jest',
+  'Enzyme',
+  'SuperTest',
+  'k6',
+  'Loader.io',
 ];
 
-const FrontendItems = () => {
+const CategoryTesting = () => {
   return (
     <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
       >
-        Frontend
+        Testing
       </AccordionSummary>
       <AccordionDetails>
-      {frontendList.map((value, index) => {
+      {testingList.map((value, index) => {
         return (
           <Grid item key={index}>{value}</Grid>
         )
@@ -34,4 +32,4 @@ const FrontendItems = () => {
   )
 }
 
-export default FrontendItems;
+export default CategoryTesting;
