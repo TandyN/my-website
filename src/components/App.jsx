@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuBar from './MenuBar';
@@ -12,6 +11,7 @@ import SectionPersonal from './SectionPersonal';
 
 const appBox = makeStyles({
   root: {
+    backgroundColor: 'blue',
     fontFamily: 'sans-serif',
     height: '100%',
   }
@@ -25,8 +25,7 @@ const App = () => {
   }
 
   return (
-    <Container
-      maxWidth="xl"
+    <Box
       className={appBoxClass.root}
     >
       <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
@@ -36,7 +35,7 @@ const App = () => {
       <SectionPortfilio />
       <SectionContact />
       <SectionPersonal />
-    </Container>
+    </Box>
   )
 }
 

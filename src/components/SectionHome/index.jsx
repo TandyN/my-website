@@ -24,7 +24,6 @@ const SectionHome = () => {
       <Grid
         container
         justify="center"
-        spacing={5}
       >
         <HomePicture />
         <HomeAboutMeSmall />
