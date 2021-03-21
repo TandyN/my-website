@@ -9,6 +9,8 @@ import experienceData from './experience.json';
 
 const experienceItemsContainer = makeStyles({
   root: {
+    height: '75%',
+    justifyContent: 'space-evenly',
     margin: 'auto',
     width: '50%',
   },
