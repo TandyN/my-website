@@ -2,14 +2,14 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-const styledContactBoxWrapper = makeStyles({
+const styledContactInfoWrapper = makeStyles({
   root: {
     height: '100%',
   }
 });
 
 const ContactInfo = () => {
-  const styledContactBoxWrapperClass = styledContactBoxWrapper();
+  const styledContactInfoWrapperClass = styledContactInfoWrapper();
 
   return (
     <Grid
@@ -20,7 +20,7 @@ const ContactInfo = () => {
         container
         justify="space-evenly"
         direction="column"
-        className={styledContactBoxWrapperClass.root}
+        className={styledContactInfoWrapperClass.root}
       >
         <h2>Contact</h2>
         <p>Info</p>
