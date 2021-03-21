@@ -3,13 +3,14 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import ContactInfo from './ContactInfo';
+import ContactTextFields from './ContactTextFields';
 
 
 
 const styledContactBoxWrapper = makeStyles({
   root: {
     margin: 'auto',
-    width: '600px',
+    width: '700px',
   }
 });
 
@@ -22,11 +23,15 @@ const ContactBox = () => {
     >
       <Grid
         container
-        alignItems="center"
         direction="column"
       >
-        <Grid item>
+        <Grid
+          container
+          justify="space-around"
+          direction="row"
+        >
           <ContactInfo />
+          <ContactTextFields />
         </Grid>
       </Grid>
     </Paper>

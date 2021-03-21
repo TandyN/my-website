@@ -17,7 +17,6 @@ const SectionContact = () => {
   return (
     <Grid
       container
-      alignItems="center"
       direction="column"
       className={styledContactSectionWrapperClass.root}
     >
