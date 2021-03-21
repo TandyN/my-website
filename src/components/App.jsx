@@ -20,15 +20,11 @@ const appBox = makeStyles({
 const App = () => {
   const appBoxClass = appBox();
 
-  const hanldeMenuBarClick = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  }
-
   return (
     <Box
       className={appBoxClass.root}
     >
-      <MenuBar hanldeMenuBarClick={hanldeMenuBarClick} />
+      <MenuBar />
       <SectionHome />
       <SectionSkills />
       <SectionExperience />

@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import ExperienceHeader from './ExperienceHeader';
-import ExperienceItem from './ExperienceItem';
+import ExperienceListLarge from './ExperienceListLarge';
 
 import experienceData from './experience.json';
 
@@ -24,17 +24,7 @@ const SectionExperience = () => {
       className={experienceItemsContainerClass.root}
     >
       <ExperienceHeader />
-      <Grid
-        container
-        direction="column"
-        justify="space-evenly"
-      >
-        {experienceData.map((experienceItem, index) => {
-          return (
-            <ExperienceItem experienceItem={experienceItem} key={index} />
-          )
-        })}
-      </Grid>
+      <ExperienceListLarge experienceData={experienceData} />
     </Grid>
   )
 }

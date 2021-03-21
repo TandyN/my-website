@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 
-const MenuBar = ({ hanldeMenuBarClick }) => {
+const MenuBar = () => {
   return (
     <AppBar>
       <Toolbar>
@@ -15,12 +15,12 @@ const MenuBar = ({ hanldeMenuBarClick }) => {
           alignItems="center"
         >
           <ButtonGroup>
-            <Button onClick={() => hanldeMenuBarClick(0)}>Home</Button>
-            <Button onClick={() => hanldeMenuBarClick(1)}>Skills</Button>
-            <Button onClick={() => hanldeMenuBarClick(2)}>Experience</Button>
-            <Button onClick={() => hanldeMenuBarClick(3)}>Portfolio</Button>
-            <Button onClick={() => hanldeMenuBarClick(4)}>Contact</Button>
-            <Button onClick={() => hanldeMenuBarClick(5)}>Personal</Button>
+            <Button>Home</Button>
+            <Button>Skills</Button>
+            <Button>Experience</Button>
+            <Button>Portfolio</Button>
+            <Button>Contact</Button>
+            <Button>Personal</Button>
           </ButtonGroup>
         </Grid>
       </Toolbar>
