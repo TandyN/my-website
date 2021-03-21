@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import ExperienceHeader from './ExperienceHeader';
+import ExperienceListSmall from './ExperienceListSmall';
 import ExperienceListLarge from './ExperienceListLarge';
 
 import experienceData from './experience.json';
@@ -25,6 +26,7 @@ const SectionExperience = () => {
     >
       <ExperienceHeader />
       <ExperienceListLarge experienceData={experienceData} />
+      <ExperienceListSmall experienceData={experienceData} />
     </Grid>
   )
 }
