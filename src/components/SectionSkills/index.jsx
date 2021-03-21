@@ -21,7 +21,7 @@ const SectionSkills = () => {
       justify="space-evenly"
       className={styledSkillsWrapperClass.root}
     >
-      <h3>Skills</h3>
+      <h2>Skills</h2>
       <SkillsCategories />
     </Grid>
   )
