@@ -7,8 +7,9 @@ import portfolioData from './portfolio.json';
 
 const styledSectionPortfolioWrapper = makeStyles({
   root: {
+    justifyContent: 'space-evenly',
     margin: 'auto',
-    minHeight: '25%',
+    minHeight: '65%',
     width: '50%',
   },
 });
