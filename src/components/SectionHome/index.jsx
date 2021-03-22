@@ -8,9 +8,6 @@ import HomePicture from './HomePicture';
 const styledHomeWrapper = makeStyles((theme) => ({
   root: {
     height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      backgroundColor: '#333b50',
-    },
   }
 }));
 

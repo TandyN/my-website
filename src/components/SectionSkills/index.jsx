@@ -12,10 +12,11 @@ const styledSkillsWrapper = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundImage: `url(${backgroundSkills})`,
-    height: '60%',
+    height: '100%',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `none`,
-      backgroundColor: '#1d1d1b',
+      backgroundColor: '#333b50',
+      height: '60%',
     },
   }
 }));

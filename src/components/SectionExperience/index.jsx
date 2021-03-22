@@ -4,15 +4,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import ExperienceListSmall from './ExperienceListSmall';
 import ExperienceListLarge from './ExperienceListLarge';
 
+import backgroundExperiences from '../../../images/experience-background.png';
 import experienceData from './experience.json';
 
 const experienceItemsContainer = makeStyles((theme) => ({
   root: {
-    height: '75%',
+    backgroundImage: `url(${backgroundExperiences})`,
+    backgroundPosition: 'center bottom',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundColor: '#1d1d1b',
+    height: '100%',
     justifyContent: 'space-evenly',
     margin: 'auto',
     [theme.breakpoints.down('sm')]: {
-      backgroundColor: '#51586b',
+      backgroundImage: 'none',
       height: '60%',
     },
   },
@@ -28,6 +34,7 @@ const SectionExperience = () => {
       alignItems="center"
       className={experienceItemsContainerClass.root}
     >
+      <h2>Experience</h2>
       <ExperienceListLarge experienceData={experienceData} />
       <ExperienceListSmall experienceData={experienceData} />
     </Grid>
