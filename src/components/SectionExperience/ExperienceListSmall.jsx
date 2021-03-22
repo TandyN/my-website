@@ -13,8 +13,15 @@ const styledCompanyAndTitle = makeStyles({
   }
 });
 
+const styledExperienceList = makeStyles({
+  root: {
+    width: '75%',
+  },
+});
+
 const ExperienceListSmall = ({ experienceData }) => {
   const styledCompanyAndTitleClass = styledCompanyAndTitle();
+  const styledExperienceListClass = styledExperienceList();
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -28,6 +35,7 @@ const ExperienceListSmall = ({ experienceData }) => {
         container
         direction="column"
         justify="space-evenly"
+        className={styledExperienceListClass.root}
       >
         {experienceData.map((experienceItem, index) => {
           return (

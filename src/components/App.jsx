@@ -11,7 +11,6 @@ import SectionPersonal from './SectionPersonal';
 
 const appBox = makeStyles({
   root: {
-    backgroundColor: 'blue',
     fontFamily: 'sans-serif',
     height: '100%',
   }

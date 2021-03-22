@@ -12,7 +12,6 @@ const experienceItemsContainer = makeStyles({
     height: '75%',
     justifyContent: 'space-evenly',
     margin: 'auto',
-    width: '50%',
   },
 });
 
