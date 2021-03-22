@@ -10,7 +10,6 @@ const styledSectionPortfolioWrapper = makeStyles({
     justifyContent: 'space-evenly',
     margin: 'auto',
     minHeight: '65%',
-    width: '50%',
   },
 });
 
