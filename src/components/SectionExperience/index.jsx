@@ -19,7 +19,7 @@ const experienceItemsContainer = makeStyles((theme) => ({
     margin: 'auto',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: 'none',
-      height: '60%',
+      height: '70%',
     },
   },
 }));

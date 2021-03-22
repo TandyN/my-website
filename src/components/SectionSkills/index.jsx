@@ -21,25 +21,8 @@ const styledSkillsWrapper = makeStyles((theme) => ({
   }
 }));
 
-const styledSkillsHeader = makeStyles((theme) => ({
-  root: {
-    [theme.breakpoints.down('sm')]: {
-      backgroundImage: `url(${backgroundSkills})`,
-      backgroundSize: '100%',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      width: '200px',
-    },
-  },
-  text: {
-    textAlign: 'center',
-  }
-}));
-
-
 const SectionSkills = () => {
   const styledSkillsWrapperClass = styledSkillsWrapper();
-  const styledSkillsHeaderClass = styledSkillsHeader();
 
   return (
     <Grid
@@ -49,9 +32,7 @@ const SectionSkills = () => {
       justify="space-evenly"
       className={styledSkillsWrapperClass.root}
     >
-      <div className={styledSkillsHeaderClass.root}>
-        <h2 className={styledSkillsHeaderClass.text}>Skills</h2>
-      </div>
+      <h2 >Skills</h2>
       <SkillsCategories />
     </Grid>
   )
