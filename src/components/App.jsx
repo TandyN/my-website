@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import MenuBar from './MenuBar';
 import SectionHome from './SectionHome';
 import SectionSkills from './SectionSkills';
@@ -16,6 +15,7 @@ const appBox = makeStyles({
     height: '100%',
   },
   seperator: {
+    backgroundColor: '#333b50',
     height: '100px',
     lineHeight: '100px',
     margin: 0,

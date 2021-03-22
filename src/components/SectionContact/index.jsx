@@ -6,6 +6,7 @@ import ContactBox from './ContactBox';
 const styledContactSectionWrapper = makeStyles({
   root: {
     alignItems: 'center',
+    backgroundColor: '#333b50',
     justifyItems: 'center',
     height: '70%',
   }

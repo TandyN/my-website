@@ -8,6 +8,7 @@ import ContactIcons from './ContactIcons';
 
 const styledContactBoxWrapper = makeStyles({
   root: {
+    backgroundColor: '#333b50',
     margin: 'auto',
     width: '700px',
   }
@@ -18,6 +19,7 @@ const ContactBox = () => {
 
   return (
     <Paper
+      elevation={5}
       className={styledContactBoxWrapperClass.root}
     >
       <Grid
