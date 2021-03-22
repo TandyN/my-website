@@ -17,7 +17,7 @@ const styledHomeWrapper = makeStyles((theme) => ({
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `none`,
-      backgroundColor: '#1d1d1b',
+      backgroundColor: '#333b50',
     },
   }
 }));

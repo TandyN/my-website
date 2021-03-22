@@ -7,7 +7,7 @@ import portfolioData from './portfolio.json';
 
 const styledSectionPortfolioWrapper = makeStyles({
   root: {
-    backgroundColor: '#333b50',
+    backgroundColor: '#1d1d1b',
     justifyContent: 'space-evenly',
     margin: 'auto',
     minHeight: '70%',

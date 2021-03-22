@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import SkillsCategories from './SkillsCategories';
 
@@ -18,6 +19,9 @@ const styledSkillsWrapper = makeStyles((theme) => ({
       backgroundColor: '#333b50',
       height: '60%',
     },
+  },
+  grid: {
+    height: '100%',
   }
 }));
 
@@ -25,16 +29,21 @@ const SectionSkills = () => {
   const styledSkillsWrapperClass = styledSkillsWrapper();
 
   return (
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      justify="space-evenly"
+    <Paper
+      elevation={5}
       className={styledSkillsWrapperClass.root}
     >
-      <h2 >Skills</h2>
-      <SkillsCategories />
-    </Grid>
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        justify="space-evenly"
+        className={styledSkillsWrapperClass.grid}
+      >
+        <h2 >Skills</h2>
+        <SkillsCategories />
+      </Grid>
+    </Paper>
   )
 }
 

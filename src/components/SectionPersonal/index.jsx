@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const styledPersonalSectionWrapper = makeStyles({
   root: {
+    backgroundColor: '#fff',
     height: '50%',
   }
 });
