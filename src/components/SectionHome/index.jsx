@@ -5,11 +5,14 @@ import HomeAboutMeSmall from './HomeAboutMeSmall';
 import HomeAboutMeLarge from './HomeAboutMeLarge';
 import HomePicture from './HomePicture';
 
-const styledHomeWrapper = makeStyles({
+const styledHomeWrapper = makeStyles((theme) => ({
   root: {
     height: '100%',
+    [theme.breakpoints.down('sm')]: {
+      backgroundColor: '#333b50',
+    },
   }
-});
+}));
 
 const SectionHome = () => {
   const styledHomeWrapperClass = styledHomeWrapper();

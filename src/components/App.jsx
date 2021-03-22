@@ -15,7 +15,7 @@ const appBox = makeStyles({
     height: '100%',
   },
   seperator: {
-    backgroundColor: '#333b50',
+    backgroundColor: '#51586b',
     height: '100px',
     lineHeight: '100px',
     margin: 0,
@@ -36,7 +36,6 @@ const App = () => {
       <SectionSkills />
       <h2 className={appBoxClass.seperator}>Experience</h2>
       <SectionExperience />
-      <h2 className={appBoxClass.seperator}>Portfolio</h2>
       <SectionPortfilio />
       <SectionContact />
       <SectionPersonal />
