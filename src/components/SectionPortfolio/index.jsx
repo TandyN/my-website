@@ -30,7 +30,6 @@ const SectionPortfilio = () => {
       direction="column"
       className={styledSectionPortfolioWrapperClass.root}
     >
-      <h2>Portfolio</h2>
       <Grid
         container
         alignItems="center"

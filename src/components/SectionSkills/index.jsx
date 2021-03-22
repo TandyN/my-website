@@ -5,7 +5,7 @@ import SkillsCategories from './SkillsCategories';
 
 const styledSkillsWrapper = makeStyles({
   root: {
-    height: '75%',
+    height: '60%',
   }
 });
 
@@ -21,7 +21,6 @@ const SectionSkills = () => {
       justify="space-evenly"
       className={styledSkillsWrapperClass.root}
     >
-      <h2>Skills</h2>
       <SkillsCategories />
     </Grid>
   )

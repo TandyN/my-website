@@ -25,7 +25,6 @@ const SectionExperience = () => {
       alignItems="center"
       className={experienceItemsContainerClass.root}
     >
-      <ExperienceHeader />
       <ExperienceListLarge experienceData={experienceData} />
       <ExperienceListSmall experienceData={experienceData} />
     </Grid>
