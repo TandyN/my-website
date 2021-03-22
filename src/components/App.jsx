@@ -32,7 +32,6 @@ const App = () => {
     >
       <MenuBar />
       <SectionHome />
-      <h2 className={appBoxClass.seperator}>Skills</h2>
       <SectionSkills />
       <h2 className={appBoxClass.seperator}>Experience</h2>
       <SectionExperience />
