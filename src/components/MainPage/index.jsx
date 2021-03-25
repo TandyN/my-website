@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Grid,
   makeStyles,
+  useMediaQuery,
 } from '@material-ui/core';
 
 import MainPageDescription from './MainPageDescription';
@@ -13,6 +14,7 @@ const useStyles = makeStyles({
 });
 
 const MainPage = () => {
+  const isScreenMedium = useMediaQuery('(min-width:960px)');
   const classes = useStyles();
 
   return (
@@ -20,7 +22,7 @@ const MainPage = () => {
         container
         className={classes.mainPage}
         direction='column'
-        justify='center'
+        justify={(isScreenMedium) ? 'center' : 'space-between'}
       >
         <MainPageDescription />
       </Grid>
