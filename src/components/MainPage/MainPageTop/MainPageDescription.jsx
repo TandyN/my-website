@@ -7,7 +7,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   description: {
     [theme.breakpoints.down('sm')]: {
-      fontSize: '4vw',
+      fontSize: 'calc(7px + 3vw)',
     },
   },
 }));

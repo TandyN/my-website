@@ -1,11 +1,12 @@
 import React from 'react';
 import {
+  Box,
   Grid,
+  Hidden,
   makeStyles,
-  useMediaQuery,
 } from '@material-ui/core';
 
-import MainPageDescription from './MainPageDescription';
+import MainPageTop from './MainPageTop';
 
 const useStyles = makeStyles({
   mainPage: {
@@ -14,18 +15,31 @@ const useStyles = makeStyles({
 });
 
 const MainPage = () => {
-  const isScreenMedium = useMediaQuery('(min-width:960px)');
   const classes = useStyles();
 
   return (
-      <Grid
-        container
-        className={classes.mainPage}
-        direction='column'
-        justify={(isScreenMedium) ? 'center' : 'space-between'}
-      >
-        <MainPageDescription />
-      </Grid>
+    <Box>
+      <Hidden smDown>
+        <Grid
+          container
+          className={classes.mainPage}
+          direction='column'
+          justify='center'
+        >
+          <MainPageTop />
+        </Grid>
+      </Hidden>
+      <Hidden mdUp>
+        <Grid
+          container
+          className={classes.mainPage}
+          direction='column'
+          justify='space-between'
+        >
+          <MainPageTop />
+        </Grid>
+      </Hidden>
+    </Box>
   )
 }
 
