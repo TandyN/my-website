@@ -7,10 +7,12 @@ import {
 } from '@material-ui/core';
 
 import MainPageTop from './MainPageTop';
+import MainPageBottom from './MainPageBottom';
 
 const useStyles = makeStyles({
   mainPage: {
     height: '100vh',
+    padding: 10,
   },
 });
 
@@ -27,6 +29,7 @@ const MainPage = () => {
           justify='center'
         >
           <MainPageTop />
+          <MainPageBottom />
         </Grid>
       </Hidden>
       <Hidden mdUp>
@@ -37,6 +40,7 @@ const MainPage = () => {
           justify='space-between'
         >
           <MainPageTop />
+          <MainPageBottom />
         </Grid>
       </Hidden>
     </Box>

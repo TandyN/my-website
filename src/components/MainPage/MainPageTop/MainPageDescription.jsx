@@ -12,19 +12,31 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const ColoredText = ({ text, color }) => {
+  const classes = useStyles();
+  return (
+    <Typography
+      className={classes.description}
+      color={(color === 'secondary') ? 'secondary' : 'primary'}
+      component='span'
+      variant='h4'
+    >
+      {text}
+    </Typography>
+  )
+}
+
 const MainPageDescription = () => {
   const classes = useStyles();
 
   return (
     <Typography
       className={classes.description}
-      variant="h4"
+      variant='h4'
     >
-      <Typography className={classes.description} color="primary" component="span" variant="h4">Tandy Nguyen </Typography>
-            is a
-      <Typography className={classes.description} color="secondary" component="span" variant="h4"> full-stack software engineer </Typography>
-            experienced with
-      <Typography className={classes.description} color="secondary" component="span" variant="h4"> JavaScript and Node.js </Typography>
+      <ColoredText text='Tandy Nguyen ' />
+      is a <ColoredText color='secondary' text='full-stack software engineer ' />
+      experienced with <ColoredText color='secondary' text='JavaScript and Node.js' />
     </Typography>
   )
 }
