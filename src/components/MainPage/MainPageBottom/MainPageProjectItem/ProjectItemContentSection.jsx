@@ -13,13 +13,13 @@ const useStyles = makeStyles({
   },
 });
 
-const ProjectItemContentSection = ({ project_title, project_caption }) => {
+const ProjectItemContentSection = () => {
   const classes = useStyles();
 
   return (
     <Box display='flex'>
       <img className={classes.img} src='https://i.imgur.com/hNwV7Tp.png' />
-      <ProjectItemDescription project_title={project_title} project_caption={project_caption} />
+      <ProjectItemDescription />
     </Box>
   )
 }

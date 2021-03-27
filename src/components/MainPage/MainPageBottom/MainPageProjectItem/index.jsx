@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainPageProjectitem = ({ project_title, project_caption }) => {
+const MainPageProjectitem = () => {
   const classes = useStyles();
 
   return (
@@ -32,7 +32,7 @@ const MainPageProjectitem = ({ project_title, project_caption }) => {
       item
       className={classes.itemWrapper}
     >
-      <ProjectItemContentSection project_title={project_title} project_caption={project_caption} />
+      <ProjectItemContentSection />
       <p className={classes.regularText}>View</p>
     </Grid>
   )

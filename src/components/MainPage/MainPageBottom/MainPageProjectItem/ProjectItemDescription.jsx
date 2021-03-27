@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   Grid,
-  makeStyles
+  makeStyles,
 } from '@material-ui/core';
+
+import { ProjectContext } from '../ProjectContext';
 
 const useStyles = makeStyles((theme) => ({
   infoWrapper: {
@@ -27,8 +29,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProjectItemDescription = ({ project_title, project_caption }) => {
+const ProjectItemDescription = () => {
   const classes = useStyles();
+  const project = useContext(ProjectContext);
 
   return (
     <Grid
@@ -37,8 +40,8 @@ const ProjectItemDescription = ({ project_title, project_caption }) => {
       direction='column'
       justify='center'
     >
-      <h3 className={`${classes.projectHeader} ${classes.regularText}`}>{project_title}</h3>
-      <p className={classes.projectCaption}>{project_caption}</p>
+      <h3 className={`${classes.projectHeader} ${classes.regularText}`}>{project.project_title}</h3>
+      <p className={classes.projectCaption}>{project.project_caption}</p>
     </Grid>
   )
 }
