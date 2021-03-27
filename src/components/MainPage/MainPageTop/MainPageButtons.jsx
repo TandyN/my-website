@@ -6,6 +6,7 @@ const MainPageButtons = () => {
   return (
     <Grid
       container
+      spacing={1}
     >
       <MainPageButtonItem description='LinkedIn' link='https://www.linkedin.com/in/tandyn' />
       <MainPageButtonItem description='GitHub' link='https://github.com/tandyn' />

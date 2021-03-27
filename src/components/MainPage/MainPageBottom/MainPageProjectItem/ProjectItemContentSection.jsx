@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   Box,
   makeStyles
 } from '@material-ui/core';
 
+import { ProjectContext } from '../ProjectContext';
 import ProjectItemDescription from './ProjectItemDescription';
 
 const useStyles = makeStyles({
@@ -15,10 +16,11 @@ const useStyles = makeStyles({
 
 const ProjectItemContentSection = () => {
   const classes = useStyles();
+  const project = useContext(ProjectContext);
 
   return (
     <Box display='flex'>
-      <img className={classes.img} src='https://i.imgur.com/hNwV7Tp.png' />
+      <img className={classes.img} src={project.project_icon} />
       <ProjectItemDescription />
     </Box>
   )
