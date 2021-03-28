@@ -51,7 +51,13 @@ const MainPageProjectitem = () => {
       tabIndex='0'
     >
       <ProjectItemContentSection />
-      <Button className={classes.regularText} size='small' variant='outlined'>View</Button>
+      <Button
+        className={classes.regularText}
+        size='small'
+        variant='outlined'
+      >
+        View
+      </Button>
     </Grid>
   )
 }
