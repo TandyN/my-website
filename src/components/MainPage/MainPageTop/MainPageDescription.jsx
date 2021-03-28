@@ -6,9 +6,10 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   description: {
-    marginBottom: 5,
+    fontSize: `calc(${theme.typography.h4.fontSize} * 1.2)`,
+    marginBottom: 10,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 'calc(7px + 3vw)',
+      fontSize: `calc((${theme.typography.h4.fontSize} - 1.7rem) + 3vw)`,
     },
   },
 }));

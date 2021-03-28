@@ -10,7 +10,7 @@ import MainPageButtons from './MainPageButtons';
 const useStyles = makeStyles((theme) => ({
   section: {
     [theme.breakpoints.up('md')]: {
-      marginBottom: '50px',
+      marginBottom: 30,
     },
   },
 }));

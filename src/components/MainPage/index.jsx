@@ -9,12 +9,18 @@ import {
 import MainPageTop from './MainPageTop';
 import MainPageBottom from './MainPageBottom';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   mainPage: {
+    display: 'flex',
+    flexWrap: 'nowrap',
     height: '100vh',
     padding: 10,
+    [theme.breakpoints.up('md')]: {
+      height: '100%',
+      minHeight: '100vh',
+    }
   },
-});
+}));
 
 const MainPage = () => {
   const classes = useStyles();

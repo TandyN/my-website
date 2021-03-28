@@ -1,0 +1,56 @@
+[33mcommit 341534ae1253983c034c695cbeae171de29aa9b3[m[33m ([m[1;36mHEAD -> [m[1;32mprojects-overflow[m[33m)[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sun Mar 28 16:32:36 2021 -0400
+
+    Add overflow settings for projects at sm breakpoint
+
+[33mcommit 9e765e9ec037d19fdcbc9632939ccd0d9cd8f8af[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: b333bd5 dcea71f
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sat Mar 27 18:42:57 2021 -0400
+
+    Merge pull request #22 from TandyN/basic
+    
+    Add main portion of website
+
+[33mcommit dcea71f8310ec806fbfe2117fae6a7fc8c6b34c1[m[33m ([m[1;31morigin/basic[m[33m, [m[1;32mbasic[m[33m)[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sat Mar 27 17:48:53 2021 -0400
+
+    Add hover effect for button when parent is hovered over
+
+[33mcommit 121ac158428bb82411aaf462fe8937eaaecd5743[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sat Mar 27 02:10:48 2021 -0400
+
+    Implement useContext to pass project information
+
+[33mcommit 88e2a4ca9223a8475f13be9872d6f21c365ffa25[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sat Mar 27 00:01:42 2021 -0400
+
+    Add project section
+
+[33mcommit fc4e0b928c22fe27bad67943bff7060df6b206ad[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Fri Mar 26 11:29:49 2021 -0400
+
+    Add buttons to MainPageTop
+
+[33mcommit 1361bc45105d8562c5b76ea44a6abce7f008daa7[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Thu Mar 25 16:01:26 2021 -0400
+
+    Add media query to split sections on main page
+
+[33mcommit 4e4e79a1c06c269bde820b8fff7ed9ed1b241cf7[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Thu Mar 25 13:25:00 2021 -0400
+
+    Add main page description
+
+[33mcommit b333bd5a5ba7331f01c7f4da275bf6ae7b07afb9[m[33m ([m[1;31morigin/master[m[33m, [m[1;32msecondary[m[33m)[m
+Author: Tandy Nguyen <nguyetan001@gmail.com>
+Date:   Sun Feb 28 16:40:58 2021 -0500
+
+    Init
